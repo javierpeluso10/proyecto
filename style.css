@@ -5,23 +5,27 @@
     font-family: 'Open Sans', sans-serif;
     color: #EFEFEF;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 body {
     background-color: #112B3C;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23205375' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23F66B0E'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
+
 /* incia logo austral index */
 
-.logo--austral{
+.logo--austral {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.logo--austral .img__logo{
+
+.logo--austral .img__logo {
     position: relative;
     height: 250px;
     width: 450px;
@@ -30,43 +34,50 @@ body {
     box-shadow: 0px 20px 20px rgba(0, 0, 0, .5);
     cursor: pointer;
 }
-.logo--austral .btn__logo{
+
+.logo--austral .btn__logo {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-in-out;
-    
+
 }
-.logo--austral .capa__logo{
+
+.logo--austral .capa__logo {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0 , 103, 123, .6);
+    background: rgba(0, 103, 123, .6);
     transition: all .5s ease-in-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
-    
+
 }
-.img__logo:hover > .capa__logo{
+
+.img__logo:hover>.capa__logo {
     opacity: 1;
     visibility: visible;
 }
-.logo--austral:hover > .capa__logo h3{
+
+.logo--austral:hover>.capa__logo h3 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
-.logo--austral:hover > .img__logo{
+
+.logo--austral:hover>.img__logo {
     transform: scale(1);
 }
-.capa__logo h3{
+
+.capa__logo h3 {
     color: #EFEFEF;
     font-weight: 400px;
     margin-bottom: 120px;
     transition: all .5s ease-out;
     margin-top: 30px;
 }
-.capa__logo p{
+
+.capa__logo p {
     color: #EFEFEF;
     font-size: 15px;
     line-height: 1.5;
@@ -80,65 +91,33 @@ body {
 /*empieza nav*/
 .contenedor {
     background-color: #112B3C;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
     width: 400px;
     height: 220px;
-    margin:auto;
+    margin: auto;
 }
 
-.logo__img{
+.logo__img {
     width: 400px;
     height: 200px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, .5);
+    border-radius: 100%;
 }
 
-.nav--menu {
-    display: inline;
-    position: fixed;
-    list-style: none;
-}
-
-.nav__contenedor {
-    height: 60px;
-}
-
-.lista1 {
-    float: left;
-}
-
-.lista1 a {
-    display: inline;
-    color: rgb(253, 253, 253);
-    padding: 14px 16px;
-    text-decoration: none;
-
-}
-
-.lista1 a:hover {
-    background-color: rgba(2, 39, 248, .7);
-
-}
-
-.btn1 {
+/* inicia desplegable*/
+.nav-item {
     background-color: #F66B0E;
-    border-radius: 111px;
 }
 
-.btn {
-    background-color: #0489aa5d;
-    border-radius: 111px;
-}
-.menu-btn{
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    font-size: 30px;
-}
 /*termina el nav*/
+/*manu hamburguesa*/
+.menu-btn {
+    display: none;
+}
+
 /*titulo 1*/
 .titulo1 {
     font-family: 'Open Sans', sans-serif;
@@ -197,6 +176,7 @@ body {
 .video p {
     font-family: 'Open Sans', sans-serif;
 }
+
 .video1 {
     text-align: center;
 }
@@ -210,6 +190,15 @@ body {
 }
 
 /* empieza productos*/
+/*incio contactenos*/
+.container__contactenos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: "header header "
+        "main main"
+        "footer footer ";
+}
 
 /* FORMULARIO */
 .contenedor-form .form .encabezado-form .titulo-form {
@@ -268,13 +257,24 @@ body {
 }
 
 .contenedor-form .form .btn-submit:hover {
-    background:  #f66b0eb7;
+    background: #f66b0eb7;
     color: rgb(0, 0, 0);
     transition: 0.7s ease-in-out;
 
 }
 
+/*fin form*/
+/*inicio ubicacion*/
+.contenedor__ubicacion {
+    padding: 30px;
+    border-radius: 2px;
+
+}
+
+/*fin ubicacion*/
+
 /*fin contactenos*/
+
 /*empieza el footer*/
 #footer {
     background-color: #F66B0E;
@@ -290,7 +290,7 @@ body {
     font-size: 20px;
 }
 
-.lista2 a:hover{
+.lista2 a:hover {
     color: #000;
     font-weight: bold;
 }
@@ -298,25 +298,25 @@ body {
 /*termina footer*/
 
 /*PAGINA PRODUCTOS*/
-
-.sectionProductos{
+.sectionProductos {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
 }
-.productosKayak{
+
+.productosKayak {
     font-size: 17px;
     color: #fff;
 }
 
-.grid-A{
+.grid-A {
     width: 600px;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
 
-.fotokayak{
+.fotokayak {
     width: 600px;
     border-radius: 5px;
     border: 2px solid black;
@@ -325,106 +325,125 @@ body {
 /*TERMINA PAGINA PRODUCTOS*/
 
 /*EMPIEZA PAGINA TIENDA*/
-.titulo_tiendas{
+.titulo_tiendas {
     font-size: 17px;
     color: #fff;
     text-decoration: underline;
     margin: 5px 0px 40px 5px;
 }
-.tiendas{
+
+.tiendas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.tiendas__grid{
+.tiendas__grid {
     width: 300px;
     margin: auto;
     padding: 10px;
 }
 
-.fotos__tiendas{
+.fotos__tiendas {
     width: 300px;
     height: 300px;
 }
+
 /*TERMINA PAGINA TIENDA*/
 
-@media (max-width: 980px){
+@media (max-width: 980px) {
     .contenedor {
         background-color: #102838;
-        
+
     }
-    .nav--menu{
+
+    .nav--menu {
         display: none;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
+
     .logo {
         width: 300px;
         height: 220px;
-        margin:auto;
+        margin: auto;
     }
-    .logo__img{
+
+    .logo__img {
         width: 300px;
         height: 200px;
     }
-    .tiendas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
 }
+
 @media(max-width:650px) {
     .contenedor {
         background-color: #112B3C;
-        
+
     }
-    .nav-menu{
+
+    .nav-menu {
         display: none;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
+
     .logo {
         width: 300px;
         height: 220px;
-        margin:auto;
+        margin: auto;
     }
-    .logo__img{
+
+    .logo__img {
         width: 300px;
         height: 200px;
     }
-   .tiendas{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-   }
-   
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
 }
-@media (max-width:320px){
+
+@media (max-width:320px) {
     .contenedor {
         background-color: #112B3C;
-        
+
     }
-    .nav-menu{
+
+    .nav-menu {
         display: none;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
+
     .logo {
         width: 300px;
         height: 220px;
-        margin:auto;
+        margin: auto;
     }
-    .logo__img{
+
+    .logo__img {
         width: 300px;
         height: 200px;
     }
-   .tiendas{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-   }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }

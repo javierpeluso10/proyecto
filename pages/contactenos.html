@@ -12,20 +12,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <header class="contenedor">
         <!--empieza el nav-->
-        <nav class="moderador">
-            <ul class="nav-menu">
-                <li class="lista1"> <a class="btn" href="../pages/menuPrincipal.html">Inicio</a></li>
-                <li class="lista1"> <a class="btn" href="../pages/tiendas.html">Tiendas</a> </li>
-                <li class="lista1"> <a class="btn" href="../pages/productos.html">Productos</a> </li>
-                <li class="lista1"> <a class="btn" href="../pages/nuestros-clientes.html">Nuestros clientes</a> </li>
-                <li class="lista1"> <a class="btn1" href="../pages/contactenos.html">Contactenos</a> </li>
-
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/menuPrincipal.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/pages/productos.html"
+                        role="button" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/desplegable/modelos.html">Modelos</a></li>
+                        <li><a class="dropdown-item" href="/pages/desplegable/palas.html">Palas</a></li>
+                        <li><a class="dropdown-item" href="/pages/desplegable/accesorios.html">Accesorios</a></li>
+                        <!--<li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">#</a></li>-->
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contactenos.html">contactenos</a>
+                </li>
             </ul>
         </nav>
         <!--termina el nav-->
@@ -38,21 +54,33 @@
         </div>
     </header>
 
-
-    <div class="contenedor-form">
-        <form action="" class="form">
-            <div class="encabezado-form">
-                <h1 class="titulo-form">Contacto</h1>
+    <section class="container__contactenos">
+        <!--incia el formulario-->
+        <section>
+            <div class="contenedor-form">
+                <form action="" class="form">
+                    <div class="encabezado-form">
+                        <h1 class="titulo-form">Contactanos</h1>
+                    </div>
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
+                    <label for="email" class="form-label">Correo Electronico:</label>
+                    <input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-textarea" id="mensaje" placeholder="Escriba su mensaje"></textarea>
+                    <input type="submit" class="btn-submit" value="Enviar Consulta">
+                </form>
             </div>
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
-            <label for="email" class="form-label">Correo Electronico:</label>
-            <input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
-            <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-textarea" id="mensaje" placeholder="Escriba su mensaje"></textarea>
-            <input type="submit" class="btn-submit" value="Enviar Consulta">
-        </form>
-    </div>
+        </section>
+        <!--fin formulario-->
+        <!--inicia ubicacion-->
+        <section>
+            <div class="contenedor__ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.901108554992!2d-60.68918797296761!3d-32.92721091721422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65351b0b0dedd%3A0x3ee4333699e320f!2sD%C3%ADaz%20V%C3%A9lez%20181%2C%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1654556371677!5m2!1ses-419!2sar" width="600" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </section>
+    <!--finaliza ubicacion-->
     <!--incia el footer-->
     <footer id="footer">
         <ul class="footerUl">
@@ -65,6 +93,10 @@
         </ul>
     </footer>
     <!--termina el footer-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
